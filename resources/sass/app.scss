@@ -1,0 +1,56 @@
+@import "weather.scss";
+// Import Font Awesome
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+@import '~@fortawesome/fontawesome-free/scss/_animated';
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~@fortawesome/fontawesome-free/css/all.css';
+// ... your other styles ...
+
+// Use Font Awesome icons
+.weather-icon {
+   font-size: 2rem;
+   margin-right: 0.5rem;
+}
+
+.sun-icon {
+   @extend .fas;
+   @extend .fa-sun;
+   color: yellow;
+}
+
+.cloud-icon {
+   @extend .fas;
+   @extend .fa-cloud;
+   color: lightgray;
+}
+
+.rain-icon {
+   @extend .fas;
+   @extend .fa-cloud-showers-heavy;
+   color: blue;
+}
+
+.snow-icon {
+   @extend .fas;
+   @extend .fa-snowflake;
+   color: white;
+}
+
+.thunderstorm-icon {
+   @extend .fas;
+   @extend .fa-bolt;
+   color: darkblue;
+}
+
+.wind-icon {
+   @extend .fas;
+   @extend .fa-wind;
+   color: gray;
+}
+
+.animated-icon {
+   @extend .fa-spin;
+}
